@@ -1,0 +1,1272 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Primeira Seção */
+.secao1 {
+    height: 110vh;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagem_topo {
+    background-image: linear-gradient(to bottom, rgba(27, 39, 39, 0) 0%, rgba(27, 39, 39, 1) 100%), linear-gradient(to left, rgba(27, 39, 39, 0) 0%, rgba(27, 39, 39, 1) 100%), url('../img/fundo_arvore_home.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.conteudo_topo {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.logo {
+    max-width: 250px;
+    height: auto;
+    background-color: transparent;
+}
+
+.menu-desktop {
+    display: flex;
+    align-items: end;
+    margin-right: 20px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 1%;
+}
+
+.menu-desktop ul {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.menu-desktop ul li {
+    margin-left: 30px;
+}
+
+.menu-desktop ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 18px; 
+    text-shadow: 2px 2px 4px #1b2727;
+}
+
+.menu-desktop ul li:nth-child(3) {
+    display: none;
+}
+
+.menu-desktop ul li a:hover{
+    transform: scale(1.15);
+}
+
+.btn-contato a button {
+    background-color: #6b8e4e;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.btn-contato a button:hover {
+    background-color: white;
+    color: #6b8e4e;
+}
+
+.txt_topo{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    top: 280px;
+    left: 52px;
+    width: 50%;
+}
+
+.txt_topo h1{
+    font-size: 78px;
+    color: white;
+    font-weight: 600;
+    line-height: 1.0;
+}
+
+.txt_topo h2{
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+    left: 5px;
+    line-height: 1.3;
+}
+
+.txt_topo h3{
+    font-size: 14px;
+    color:white;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: justify;
+    width: 46%;
+}
+
+#btn_topo{
+    width: auto;
+    height: auto;
+    background-color: #6b8e4e;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#btn_topo:hover{
+    background-color: white;
+    color: #6b8e4e;
+}
+
+/* Responsividade - Seção 1*/
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+    }
+
+    .conteudo_topo {
+        padding: 20px;
+    }
+
+    .txt_topo {
+        top: 280px;
+        left: 20px;
+        width: 80%;
+    }
+
+    .txt_topo h3{
+        width: 100%;
+    }
+
+    .txt_topo h2{
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .txt_topo h1{
+        width: 100%;
+        font-size: 60px;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .btn-contato{
+        margin-right: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 1px) and (max-width: 1000px) {
+    body {
+        overflow-x: hidden;
+    }
+    .menu-desktop {
+        display: none;
+    }
+
+    .btn-contato {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .conteudo_topo {
+        padding: 20px;
+    }
+
+    .txt_topo {
+        top: 280px;
+        left: 20px;
+        width: 80%;
+    }
+
+    .txt_topo h3{
+        width: 100%;
+    }
+
+    .txt_topo h2{
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .txt_topo h1{
+        width: 100%;
+        font-size: 60px;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1300px) {
+    body {
+        overflow-x: hidden;
+    }
+    .menu-desktop {
+        display: flex;
+    }
+
+    .btn-contato {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .conteudo_topo {
+        padding: 20px;
+    }
+
+    .txt_topo {
+        top: 280px;
+        left: 20px;
+        width: 70%;
+    }
+
+    .txt_topo h3{
+        width: 100%;
+    }
+
+    .txt_topo h2{
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .txt_topo h1{
+        width: 100%;
+        font-size: 60px;
+    }
+
+}
+
+
+/*Segunda Seção */
+.secao2 {
+    height: auto;
+    min-height: 110vh;
+    background-color: white;
+    padding-bottom: 2em;
+}
+
+.secao2_menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    margin-top: -30px;
+}
+
+.circulo-container {
+    display: inline-block;
+    text-align: center;
+    margin: 0 100px;
+}
+
+.circulo {
+    width: 120px;
+    height: 120px;
+    background-color: #ffffff;
+    border-radius: 60px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.568);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5px;
+    transition: transform 0.3s ease;
+}
+
+.circulo img{
+    width: 70px;
+    height: 70px;
+}
+
+.circulo:hover{
+    transform: translateY(-15px);
+}
+
+.texto_circulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #575757;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.secao2_conteudo{
+    margin-left: 52px;
+    clear: left;
+}
+
+.secao2_conteudo h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #1b2727;
+    font-size: 48px;
+    display: inline;
+}
+
+.secao2_conteudo h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #6b8e4e;
+    display: inline;
+    font-size: 48px;
+}
+
+.secao2_conteudo h4{
+    font-size: 20px;
+    color:black;
+    margin-top: 10px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: justify;
+    width: 96%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+} 
+
+.card {
+    width: 23%;
+    height: auto;
+    background: linear-gradient(to left, #164b2e, #000000);
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 60px;
+    float: left;
+    margin-right: 30px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.568);
+}
+
+.card .num{
+    background-color: #6b8e4e;
+    width: 75px;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.card .num h2{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.card_ambiental h5{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 120px;
+}
+
+.card_ambiental p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Responsividade - Seção 2*/
+@media screen and (max-width: 1200px) {
+    .circulo-container {
+        margin: 0 50px;
+    }
+    .card {
+        width: 45%;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .circulo-container {
+        margin: 0 20px;
+    }
+
+    .card {
+        width: 90%;
+        margin-right: 10px;
+    }
+}
+
+
+/* Terceira Seção */
+.secao3 {
+    height: auto;
+    min-height: 55vh;
+}
+
+.interface{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(27, 39, 39, 0) 0%, rgba(27, 39, 39, 1) 150%), linear-gradient(to left, rgba(27, 39, 39, 0) 0%, rgba(27, 39, 39, 1) 150%), url('../img/fundo_secao3.jpg');
+
+}
+.secao3 .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+    padding-left: 52px;
+    padding-top: 10px;
+    padding-right: 52px;
+    align-items: center;
+}
+
+.secao3 h1 {
+    color: white;
+    font-size: 41px;
+    line-height: 40px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.secao3 .txt-topo-site h1 span {
+    color: #6b8e4e;
+    margin-top: 0;
+}
+
+.secao3 .txt-topo-site p {
+    color: white;
+    width: 97%;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.btn-contato2 a button {
+    background-color: #6b8e4e;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.btn-contato2 a button:hover {
+    background-color: white;
+    color: #6b8e4e;
+}
+
+
+.secao3 .img-topo-site {
+    display: flex;
+    flex-direction: column;
+}
+
+.secao3 .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/* Responsividade - Seção 3*/
+@media screen and (max-width: 1200px) {
+    .secao3 .flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .secao3 h1 {
+        font-size: 32px;
+        line-height: 30px;
+        margin-top: 50px;
+        text-align: justify;
+    }
+
+    .secao3 .txt-topo-site p {
+        font-size: 18px;
+    }
+
+    .btn-contato2 a button {
+        padding: 8px 30px;
+        font-size: 16px;
+    }
+
+    .secao3 .img-topo-site img {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .secao3 .img-topo-site img{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .secao3 .flex {
+        gap: 20px;
+    }
+
+    .secao3 h1 {
+        font-size: 28px;
+        line-height: 26px;
+        margin-top: 30px;
+    }
+
+    .secao3 .txt-topo-site p {
+        font-size: 16px;
+    }
+
+    .btn-contato2 a button {
+        padding: 6px 25px;
+        font-size: 14px;
+    }
+
+    .secao3 .img-topo-site img {
+        display: none;
+    }
+}
+
+
+/* Quarta Seção */
+.secao4{
+    height: auto;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.secao4 .flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.secao4 .especialidades-box{
+    color:#6b8e4e;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 30px;
+    transition: .2s;
+    margin-top: 30px;
+    width: calc(23% - 60px);
+    box-sizing: border-box;
+    border: 0.5px solid #5757578e;
+    height: auto;
+}
+
+.secao4 .especialidades-box:hover{
+    transform: scale(1.10);
+    box-shadow: 0 0 8px #164b2e;
+}
+
+.interface2 h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #1b2727;
+    font-size: 45px;
+    display: inline;
+    text-align: center;
+}
+
+.interface2 h2 span{
+    color: #6b8e4e;
+}
+
+.secao4 .especialidades-box i{
+    font-size: 55px;
+    color: #6b8e4e;
+}
+
+.secao4 .especialidades-box h3{
+    color: #6b8e4e;
+    margin-top: 40px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+.secao4 .especialidades-box p{
+    color: #000000;
+    font-weight: 400;
+    text-align: justify;
+}
+
+/*Responsividade - Seção 4*/
+@media screen and (max-width: 1200px) {
+    .secao4 .especialidades-box{
+        width: calc(50% - 60px);
+    }
+
+    .interface2 h2{
+        font-size: 35px;
+    }
+
+    .brsection{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .secao4 .flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao4 .especialidades-box{
+        width: calc(100% - 60px);
+    }
+
+    .secao4 .especialidades-box br{
+        display: none;
+    }
+}
+
+
+/* Quinta Seção */
+.secao5{
+    height: auto;
+    min-height: 100vh;
+    background-color: #1b2727;
+}
+
+/* Sexta Seção */
+.secao6{
+    height: auto;
+    min-height: 55vh;
+    background-color: white;
+}
+
+.secao6_titulo{
+    width: 90%;
+    height: auto;
+    margin-left: 52px;
+}
+
+.secao6_titulo h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #6b8e4e;
+    font-size: 50px;
+    display: inline;
+}
+
+.secao6_titulo h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #1b2727;
+    font-size: 2em;
+    display: inline;
+}
+
+.secao6_titulo h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #6b8e4e;
+    display: inline;
+    font-size: 2em;
+}
+
+.secao6_texto h4{
+    font-size: 20px;
+    color:black;
+    margin-top: 10px;
+    font-weight: 400;
+    text-align: justify;
+    width: 96%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+.secao6_conteudo{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 10px 52px;
+}
+
+.secao6_texto{
+    width: 70%;
+    height: auto;
+}
+
+.secao6_img{
+    width: 30%;
+    height: auto;
+    float: left;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.secao6_img img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+    margin-top: -80px;
+}
+
+/* Responsividade - Seção 6 */
+@media (max-width: 1400px) and (min-width: 1092px){
+    .secao6_img img {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 768px) {
+    .secao6_titulo{
+        margin-top: -10px;
+    }
+    .secao6_titulo h1 {
+        font-size: 40px;
+    }
+
+    .secao6_titulo h2 {
+        font-size: 1.5em;
+    }
+
+    .secao6_titulo h3 {
+        font-size: 1.5em;
+    }
+
+    .secao6_texto h4 {
+        font-size: 18px;
+    }
+
+    .secao6_conteudo {
+        padding: 10px 20px;
+    }
+
+    .secao6_img {
+        display: none;
+    }
+
+    .secao6_texto{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1091px) and (min-width: 576px){
+    .secao6_titulo{
+        margin-top: -10px;
+    }
+
+
+    .secao6_img {
+        display: none;
+    }
+
+    .secao6_texto {
+        width: 100%;
+    }
+}
+
+
+/* Sétima Seção */
+.secao7 {
+    height: auto;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.interface3{
+    background-image: linear-gradient(to bottom, rgba(27, 39, 39, 0) 0%, rgba(27, 39, 39, 1) 150%), linear-gradient(to left, rgba(27, 39, 39, 0) 0%, rgba(27, 39, 39, 1) 150%), url('../img/fundo_secao3.jpg');
+}
+.secao7 .flex3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+    padding-left: 52px;
+    padding-top: 10px;
+    padding-right: 52px;
+    align-items: center;
+}
+
+.secao7 h1 {
+    color: white;
+    font-size: 41px;
+    line-height: 40px;
+    margin-top: 70px;
+    line-height: 1.2;
+}
+
+.secao7 .txt-topo-site3 h1 span {
+    color: #6b8e4e;
+    margin-top: 0;
+}
+
+.secao7 .txt-topo-site3 p {
+    color: white;
+    width: 97%;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.secao7 .img-topo-site3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.secao7 .img-topo-site3 img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* Responsividade - Seção 7*/
+@media screen and (max-width: 1200px) {
+    .secao7 .flex3 {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .secao7 h1 {
+        font-size: 32px;
+        line-height: 30px;
+        margin-top: 50px;
+        text-align: justify;
+    }
+
+    .secao7 .txt-topo-site3 p {
+        font-size: 18px;
+    }
+
+    .secao7 .img-topo-site3 img {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .secao7 .img-topo-site3 img{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .secao7 .flex3 {
+        gap: 20px;
+    }
+
+    .secao7 h1 {
+        font-size: 28px;
+        line-height: 26px;
+        margin-top: 30px;
+    }
+
+    .secao7 .txt-topo-site3 p {
+        font-size: 16px;
+    }
+
+    .secao7 .img-topo-site3 img {
+        display: none;
+    }
+}
+
+
+/* Oitava Seção */
+.secao8{
+    height: auto;
+    min-height: 100vh;
+    background-color: white;
+    padding: 20px;
+}
+
+.secao8 .interface4 .titulo4 {
+    padding: 40px 4%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #1b2727;
+    font-size: 45px;
+    display: inline;
+    text-align: center;
+}
+
+.secao8 .interface4 .titulo4 span {
+    color: #6b8e4e;
+}
+
+.secao8 .flex4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.secao8 .img-port {
+    width: 150px;
+    height: 220px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 2s ease-in-out;
+    cursor: pointer; 
+    border-radius: 40px;
+    position: relative;
+    flex-basis: calc(30% - 20px);
+}
+
+.secao8 .img-port:hover {
+    background-position: 100% 100%; 
+}
+
+.secao8 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6b8e4e88;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 35px;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+    font-weight: bold;
+    text-align: center;
+}
+
+.secao8 .overlay:hover {
+    opacity: 1;
+}
+
+/* Responsividade - Seção 8 */
+@media (max-width: 800px) {
+    .secao8 .img-port {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .secao8 .interface4 .titulo4 {
+        font-size: 30px;
+    }
+
+    .secao8 .overlay {
+        font-size: 16px;
+    }
+}
+
+/* Nona Seção */
+.secao9 {
+    height: auto;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.interface9{
+    padding: 40px 0;
+    background-image: linear-gradient(to bottom, rgba(27, 39, 39, 0) 0%, rgba(27, 39, 39, 1) 150%), linear-gradient(to left, rgba(27, 39, 39, 0) 0%, rgba(27, 39, 39, 1) 150%), url('../img/fundo_secao3.jpg');
+}
+.secao9 .flex9 {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+    padding-left: 52px;
+    padding-right: 52px;
+    align-items: center;
+}
+
+.secao9 h1 {
+    color: white;
+    font-size: 41px;
+    line-height: 40px;
+    margin-top: 50px;
+    line-height: 1.2;
+}
+
+.secao9 .txt-topo-site9 p {
+    color: white;
+    width: 97%;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.secao9 .txt-topo-site9 h1 span {
+    color: #6b8e4e;
+    margin-top: 0;
+}
+
+.secao9 .img-topo-site9 {
+    display: flex;
+    flex-direction: column;
+}
+
+.secao9 .img-topo-site9 img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* Responsividade - Seção 9 */
+@media screen and (max-width: 1200px) {
+    .secao9 .flex9 {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .secao9 .txt-topo-site9 p {
+        font-size: 18px;
+    }
+
+    .secao9 h1 {
+        font-size: 32px;
+        line-height: 30px;
+        margin-top: 50px;
+        text-align: justify;
+    }
+
+    .secao9 .img-topo-site9 img {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .secao9 .img-topo-site9 img{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .secao9 .flex9 {
+        gap: 20px;
+    }
+
+    .secao9 h1 {
+        font-size: 28px;
+        line-height: 26px;
+        margin-top: 30px;
+    }
+
+    .secao9 .txt-topo-site9 p {
+        font-size: 18px;
+    }
+
+    .secao9 .img-topo-site9 img {
+        display: none;
+    }
+}
+
+
+/* Décima Seção */
+.secao10 {
+    width: 100%;
+    background-color: #ffffff;
+    overflow: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.home-txt {
+    max-width: 100%;
+    margin: 0 20px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.home-txt .texto1, .home-txt .texto2 {
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.home-txt h2 {
+    font-size: 2em;
+    color: #1b2727;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.home-txt h2 span {
+    color: #6b8e4e;
+}
+
+.home-txt p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: black;
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+hr {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    background-color: #6b8e4e;
+    border: none;
+    height: 100%; 
+    border-radius: 10px;
+}
+
+/* Responsividade - Seção 10 */
+@media (max-width: 768px) {
+    .home-txt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-txt .texto1, .home-txt .texto2 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .home-txt h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .home-txt p {
+        font-size: 1em;
+        text-align: justify;
+    }
+
+    hr {
+        position: static;
+        width: 50%;
+        margin: 20px auto;
+        transform: none;
+    }
+}
+
+
+
+
+/* Décima Primeira Seção */
+.secao11 {
+    height: auto;
+    min-height: 25vh;
+    background-color: #1b2727;
+}
+
+.rodape {
+    background-color: #1b2727;
+    color: white;
+    height: auto;
+    width: 100%;
+    font-size: 14px;
+    font-family: helvetica;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: white;
+}
+
+.rodape-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    align-items: stretch;
+    padding: 60px 20px 40px 10px;
+    margin-left: 20px;
+}
+
+.rodape-div-1{
+    margin-right: 20px;
+}
+
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4 {
+    display: flex;
+    width: calc(25% - 20px); 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.rodape-div-1 img{
+    width: 160px;
+    height: auto;
+    margin-left: -5px;
+}
+
+.rodape span {
+    font-size: 20px;
+    color: white;
+}
+
+.rodape-direitos {
+    width: 100%;
+    background-color: #6b8e4e;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+
+/* Responsividade - Seção 11*/
+@media (max-width: 768px) {
+    .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4 {
+        width: calc(50% - 20px);
+        padding: 10px;
+    }
+    
+    .rodape-div {
+        padding: 60px 0px 40px 0px;
+    }
+}

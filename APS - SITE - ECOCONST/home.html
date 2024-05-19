@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Implementando fonte externa - "Poppins" -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"><!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="css/styleHome.css"/>
+    <link rel="shortcut icon" type="imagex/png" href="img/logo_icone.png">
+    <script src="js/script.js"></script>
+    <title>Home - EcoConst</title>
+</head>
+<body>
+    <header>
+        <!-- Início da primeira 'seção' da página-->
+        <section class="secao1">
+            <div class="conteudo_topo">
+                <img src="img/logo_fundoescuro.png" class="logo">
+                
+                <div class="nav-container">
+                    <nav class="menu-desktop">
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="#">Sobre Nós</a></li>
+                            <li id="contact"><a href="#">Contato</a></li>
+                        </ul>
+                    </nav>
+                    <div class="btn-contato">
+                        <a href="contato.html">
+                            <button>Contato</button>
+                        </a>
+                    </div>
+                </div>                
+
+                <div class="txt_topo">
+                    <h2>Aprenda mais sobre ESG</h2>
+                    <h1>EM CIDADES INTELIGENTES</h1>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+                    <button id="btn_topo" onclick="scroolSection()">Mais Informações</button>
+                </div>
+            </div>
+            <div class="imagem_topo"></div>
+        </section>
+    </header>
+    <main>
+
+        <!-- Início da segunda 'seção' da página-->
+        <section id="secao2" class="secao2">
+            <div class="secao2_menu">
+                <div class="circulo-container">
+                    <center><div class="circulo" onclick="scroolSection()">
+                        <img src="img/icon_esg.png"/>
+                    </div>
+                    <div class="texto_circulo">ESG</div></center>
+                </div>
+                <div class="circulo-container">
+                    <center><div class="circulo" onclick="scroolSection2()">
+                        <img src="img/icon_cidade.png"/>
+                    </div>
+                    <div class="texto_circulo">Cidades Inteligentes</div></center>
+                </div>
+                <div class="circulo-container">
+                    <center><div class="circulo" onclick="scroolSection4()">
+                        <img src="img/icon_eficiencia.png"/>
+                    </div>
+                    <div class="texto_circulo">Eficiência Energética</div></center>
+                </div>
+            </div>
+                  
+            <div class="secao2_conteudo">
+                <br><br>
+                <h2>O que é <h3>ESG?</h3></p></h2>
+                <h4><p>ﾠﾠLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                    <p>ﾠﾠLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></h4>
+
+                    <!-- Construindo Cards -->
+                    <div class="card-container">
+                    <div class="card">
+                        <div class="num">
+                            <center><h2>#1</h2></center>
+                        </div>
+                        <div class="card_ambiental">
+                          <h5 class="card-title">Ambiental</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                               Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="num">
+                            <center><h2>#2</h2></center>
+                        </div>
+                        <div class="card_ambiental">
+                          <h5 class="card-title">Social</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                               Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="num">
+                            <center><h2>#3</h2></center>
+                        </div>
+                        <div class="card_ambiental">
+                          <h5 class="card-title">Governamental</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                               Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+
+        <!-- Início da Terceira Seção -->
+        <section class="secao3">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>De que modo as Empresas e o Governo adotam as práticas de <span>ESG?</span></h1>
+                        <p>ﾠﾠA governança em cidades inteligentes é um campo dinâmico que requer abordagens flexíveis e adaptativas para alinhar as inovações tecnológicas com as metas de sustentabilidade e inclusão. As futuras pesquisas e práticas devem visar à criação de cidades verdadeiramente inteligentes, onde a tecnologia serve às necessidades humanas e ambientais de forma equilibrada e sustentável.</p>
+                        <p>ﾠﾠHá vários parâmetros impostos dentro do ESG que podem ser vistos em padronizações internacionais e de dentro do Brasil. Isso tudo dependerá da avaliação da materialidade (O que eu faço? Com o que eu trabalho?). Desse modo, é possível que seja criada uma linha de base para estabelecer o parâmetro de cada letra (ESG).
+                            Após estabelecida a linha de base, o projeto ou programa é desenvolvido e implementado, assim a empresa deve estabelecer metas factíveis. 
+                        </p>
+                        <br>
+                        <div class="btn-contato2">
+                            <a href="#">
+                                <button onclick="scroolSection4()">Saiba mais</button>
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="img-topo-site">
+                        <img src="img/8302468-eps10-verde-grafico-icone-ou-logotipo-em-simples-plano-moderno-estilo-isolado-em-fundo-branco-gratis-vetor.jpg" alt="" width="240px" style= "border-radius: 30px;" >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+       <!-- Início da Quarta Seção -->
+        <section class="secao4">
+            <div class="interface2">
+                <br>
+                <center><h2 class="titulo">PREMISSAS QUE DEVEM SER <span>AVALIADAS:</span></h2></center>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-chat-text"></i>
+                        <h3>Adoção de Modelos Híbridos</h3>
+                        <p>Cidades podem explorar modelos de governança híbridos que combinam os pontos fortes dos sistemas centralizados e colaborativos para enfrentar desafios urbanos complexos.</p>  
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-rocket-takeoff-fill"></i>
+                        <h3>Engajamento Comunitário</h3>
+                        <p>Encorajar a participação ativa dos cidadãos e das partes interessadas no processo de tomada de decisão, assegurando que as iniciativas de cidade inteligente sejam inclusivas e atendam às necessidades locais.</p>
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-currency-exchange"></i>
+                        <h3>Investimento em Tecnologia e Sustentabilidade</h3>
+                        <p>Continuar com os investimentos em tecnologia, mas com foco em soluções sustentáveis que estejam dentro dos limites ambientais e promovam a justiça social.</p>
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-search"></i>
+                        <h3>Pesquisa Integrada</h3>
+                        <p>Fomentar pesquisas interdisciplinares que abordem a interação entre tecnologia, governança e sustentabilidade, proporcionando insights mais profundos sobre como otimizar a gestão de cidades inteligentes.</p>
+                    </div>
+                    
+                    <div class="especialidades-box">
+                        <i class="bi bi-person-exclamation"></i>
+                        <br id="brsection"><br id="brsection"><br id="brsection"><br id="brsection">
+                        <h3>Atividade</h3>
+                        <p>Qual é a comunidade impactada pela atividade da empresa? A empresa tem relação com essa comunidade?</p>
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-people-fill"></i>
+                        <br id="brsection"><br id="brsection"><br id="brsection"><br id="brsection">
+                        <h3>Steakholders</h3>
+                        <p>Multidisciplinariedade - Precisam haver pessoas qualificadas de diversas áreas para que as questões sejam estudadas.</p>
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-truck"></i>
+                        <br id="brsection"><br id="brsection"><br id="brsection"><br id="brsection">
+                        <h3>Propósito</h3>
+                        <p>O que está sendo levado ao mundo em prol do lucro da empresa?</p>
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-eye"></i>
+                        <br id="brsection"><br id="brsection"><br id="brsection"><br id="brsection">
+                        <h3>Visão</h3>
+                        <p>O que a empresa tem em seu alcance para que seja reparado? </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Início da Quinta Seção -->
+        <section class="secao5"></section>
+
+
+        <!-- Início da Sexta Seção -->
+        <section class="secao6">
+            <div class="secao6_titulo">
+                <br><br>
+                <h1>Eficiência Energética</h1>
+                <br>
+                <h2>Conceito e aplicação em práticas </h2><h3>ESG:</h3></h2>
+            </div>
+            <div class="secao6_conteudo">
+                <div class="secao6_texto">
+                    <h4>ﾠﾠLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+
+                    <h4>ﾠﾠLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+                </div>
+                <div class="secao6_img">
+                    <img src="img/energetica_image.svg"/>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Início da Sétima Seção -->
+        <section class="secao7">
+            <div class="interface3">
+                <div class="flex3">
+                    <div class="txt-topo-site3">
+                        <h1>Eficiência Energética e suas <span>Vantagens:</span></h1>
+                        <p>ﾠﾠA Eficiência Energética, como já abordado, se refere ao uso otimizado da energia, buscando realizar as mesmas tarefas com menos consumo. 
+                            Isso significa reduzir o desperdício e aproveitar os recursos energéticos de forma mais inteligente, sem comprometer a qualidade de vida ou a produtividade.
+                            Deste modo, entendemos que a eficiência energética é um compromisso fundamental para o futuro do planeta e da sociedade. Através da adoção de práticas e tecnologias 
+                            eficientes, podemos construir um mundo mais sustentável, próspero e saudável para todos.</p>
+                    </div>
+                
+                    <div class="img-topo-site3">
+                        <img src="img/eficiencia-energetica-o-que-e-e-quais-os-principais-beneficios-1.jpg" alt="" width="240px" style= "border-radius: 30px;" >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Início da Oitava Seção -->
+        <section class="secao8">
+            <div class="interface4">
+                <br>
+                <center><h2 class="titulo4">VANTAGENS DA IMPLEMENTAÇÃO DA <SPAN>EFICIÊNCIA ENERGÉTICA</SPAN></h2></center>
+                <br>
+                <div class="flex4">
+                    <div class="img-port" style="background-image: url(img/redução\ energ.jpeg);">
+                        <div class="overlay">- Redução do consumo de energia em residências, comércios, indústrias e setor público;</div>
+                    </div>
+                    <div class="img-port" style= "background-image: url(img/contadeluz.jpeg);">
+                        <div class="overlay">- Diminuição das contas de luz e outros custos com energia;</div> 
+                    </div>
+                    <div class="img-port" style="background-image: url(img/efeitoestufa.jpeg);">
+                        <div class="overlay">- Menor emissão de gases do efeito estufa e outros poluentes, combatendo as mudanças climáticas e melhorando a qualidade do ar;</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(img/combust\ fossil.jpeg);">
+                        <div class="overlay">- Preservação dos recursos naturais finitos, como combustíveis fósseis;</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(img/segenergetica.jpeg);">
+                        <div class="overlay">- Aumento da segurança energética e redução da dependência de fontes externas de energia;</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(img/tecnsustentavel.jpeg);">
+                        <div class="overlay">- Estímulo à inovação no desenvolvimento de tecnologias mais eficientes e sustentáveis;</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(img/qualidadevida.jpeg);">
+                        <div class="overlay">- Melhoria da qualidade de vida com maior conforto, saúde e bem-estar;</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(img/energiaptodos.jpeg);">
+                        <div class="overlay">- Acesso à energia para todos a um custo acessível;</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(img/consciambiental.jpeg);">
+                        <div class="overlay">- Promoção da conscientização ambiental e da construção de uma sociedade mais sustentável.</div>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section>  
+        
+
+        <!-- Início da Nona Seção -->
+        <section class="secao9">
+            <div class="interface9">
+                    <div class="flex9">
+                        <div class="txt-topo-site9">
+                            <h1>Eficiência Energética: <span>Metodologias e Otimizações </span></h1>
+                            <p>ﾠﾠA eficiência energética é uma questão de importância global, com implicações que vão desde a economia individual 
+                                até a sustentabilidade do planeta. Frente a essa questão, abordaremos aspectos que envolvem tanto as ações individuais, 
+                                quanto as ações corporativas que podem ser tomadas para melhorar a eficiência energética. Sendo assim, discutiremos desde práticas cotidianas, 
+                                como a configuração de dispositivos eletrônicos, até estratégias empresariais, como a otimização de Data Centers. Todas essas, 
+                                são práticas e ações que visam contribuir para um futo mais sustentável.</p>
+                        </div>
+                    
+                        <div class="img-topo-site9">
+                            <img src="img/cardimg_section09.png" alt="" width="380px" height="260px" style= "border-radius: 30px;" >
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        <!-- Início da Décima Seção -->
+        <section class="secao10">
+            <div class="home-txt">
+                <div class="texto1">
+                    <h2>O que <span>você</span> pode fazer:</h2>
+                    <p><b>1.</b> Configurar computadores e dispositivos eletrônicos para entrar em modo de economia de energia quando não estiverem sendo usados.</p>
+                    <p><b>2.</b> Desligar carregadores de dispositivos quando não estiverem em uso para evitar consumo de energia fantasma.</p>
+                    <p><b>3.</b> Educar-se sobre práticas de economia de energia e disseminar esse conhecimento para amigos e familiares.</p>
+                    <p><b>4.</b> Comprar produtos energeticamente eficientes e com menor impacto ambiental sempre que possível.</p>
+                    <p><b>5.</b> Reduzir o tempo de banho e instalar dispositivos de economia de água em chuveiros e torneiras.</p>
+                    <p><b>6.</b> Regular a temperatura do aquecedor de água para evitar o superaquecimento e o desperdício de energia.</p>
+                    <p><b>7.</b> Investir em painéis solares ou sistemas de energia solar para geração de eletricidade em casa.</p>
+                    <p><b>8.</b> Participar de programas de energia comunitária que promovam o uso de energia renovável.</p>
+                    <p><b>9.</b> Apoiar políticas e iniciativas que promovam a eficiência energética em construções e infraestruturas públicas.</p>
+                </div>
+                <hr>
+                <div class="texto2">
+                    <h2>O que as <span>empresas</span> podem fazer:</h2>
+                    <p><b>1.</b> Para minimizar os custos de eletricidade em um Data Center, uma estratégia eficaz é optar por equipamentos que sejam mais econômicos em termos de energia. Ao escolher processadores, fontes de alimentação, unidades de armazenamento em estado sólido (SSDs) e outros componentes, é crucial considerar seu consumo energético. Essa abordagem não apenas reduz os gastos operacionais, mas também contribui para uma operação mais sustentável e eficiente em termos de energia.</p>
+                    <p><b>2.</b> Carros elétricos e híbridos ajudam a diminuir a necessidade de combustíveis fósseis, o que resulta em menores emissões de carbono e maior eficiência no uso de energia.</p>
+                    <p><b>3.</b> Soluções de gestão energética como softwares especializados podem acompanhar e gerenciar o consumo de energia em construções, fábricas e instalações industriais, buscando maximizar a eficiência no uso de recursos energéticos.</p>
+                    <p><b>4.</b> Redes inteligentes, ou Smart Grids, utilizam tecnologia de comunicação bidirecional para melhorar a distribuição de energia elétrica. Isso resulta em menos perdas na rede e facilita a integração mais eficiente de fontes de energia renovável.</p>
+                    <p><b>5.</b> Além de aproveitar a energia do sol e do vento, tecnologias novas como energia das marés, geotérmica e das ondas oferecem opções adicionais de energia limpa e renovável.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+        <!-- Início da Décima Primeira Seção -->
+        <section class="secao11">
+            <footer class="rodape" id="contato">
+                <div class="rodape-div">
+            
+                    <div class="rodape-div-1">
+                        <div class="rodape-div-1-coluna">
+                            <span><b><img src="img/logo_fundoescuro.png"></b></span>
+                            <p>Av. Marquês de São Vicente, 3001 - Água Branca, São Paulo - SP, 05037-040</p>
+                        </div>
+                    </div>
+            
+                    <div class="rodape-div-2">
+                        <div class="rodape-div-2-coluna">
+                            <span><b>Contatos</b></span>
+                            <p>ecoconst@gmail.com</p>
+                            <p>+55 11 9990-0000</p>
+                        </div>
+                    </div>
+            
+                    <div class="rodape-div-3">
+                        <div class="rodape-div-3-coluna">
+                            <span><b>Links</b></span>
+                            <p><a href="#servicos">Serviços</a></p>
+                            <p><a href="#empresa">Empresa</a></p>
+                            <p><a href="#sobre">Sobre</a></p>
+                        </div>
+                    </div>
+            
+                    <div class="rodape-div-4">
+                        <div class="rodape-div-4-coluna">
+                            <span><b>Outros</b></span>
+                            <p>Políticas de Privacidade</p>
+                        </div>
+                    </div>
+            
+                </div>
+                <p class="rodape-direitos">Copyright © 2023 – Todos os Direitos Reservados.</p>
+            </footer>
+        </section>
+</body>
+</html>
